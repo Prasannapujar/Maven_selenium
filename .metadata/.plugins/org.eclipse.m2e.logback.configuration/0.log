@@ -64,3 +64,14 @@
 2015-04-11 13:43:00,047 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2015-04-11 13:43:00,053 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2015-04-11 13:43:00,057 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-11 14:10:57,158 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.prasanna.aut:Merqurysite:0.0.1-SNAPSHOT @ C:\Users\Prasanna\git\Maven_selenium\Merqurysite\pom.xml.
+2015-04-11 14:10:59,958 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Merqurysite/src/main/java
+2015-04-11 14:10:59,979 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Merqurysite/src/main/resources
+2015-04-11 14:10:59,981 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Merqurysite/src/test/java
+2015-04-11 14:10:59,983 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Merqurysite/src/test/resources
+2015-04-11 14:11:00,336 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.prasanna.aut:Merqurysite:0.0.1-SNAPSHOT @ C:\Users\Prasanna\git\Maven_selenium\Merqurysite\pom.xml.
+2015-04-11 14:11:04,239 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.prasanna.aut:Merqurysite:0.0.1-SNAPSHOT @ C:\Users\Prasanna\git\Maven_selenium\Merqurysite\pom.xml.
+2015-04-11 14:11:04,540 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-04-11 14:11:04,586 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2015-04-11 14:11:04,594 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2015-04-11 14:11:04,597 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
