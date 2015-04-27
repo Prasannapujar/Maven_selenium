@@ -1,5 +1,6 @@
 package org.prasanna.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebDriver;
  *  
  */
 public abstract class Headers extends Page{
+	
+	private static String home_xpath="//a[text()='Home']";
 
 	public Headers(WebDriver driver) {
 		super(driver);
@@ -21,6 +24,15 @@ public abstract class Headers extends Page{
 	 * @return false : if fails
 	 */
 	public abstract boolean Verifypage();
+	
+	/*
+	 * click on the Home link 
+	 */
+	public Home clickonHome()
+	{
+		driver.findElement(By.xpath(home_xpath)).click();
+		return new Home(driver);
+	}
 	
 
 }
