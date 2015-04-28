@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -37,6 +38,7 @@ public class Waittool {
 		element=wait.until(ExpectedConditions.visibilityOfElementLocated(b));
 		driver.manage().timeouts().implicitlyWait(Default_wait_page, TimeUnit.SECONDS);
 		
+		
 		}
 		
 		catch(Exception e)
@@ -46,5 +48,40 @@ public class Waittool {
 		return null;
 		
 	}
+	
+	public static boolean waitfortext(WebDriver driver,final By b,int timeunit,final String text)
+	{
+		WebElement element;
+		Boolean flag=false;
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		WebDriverWait wait=new WebDriverWait(driver, timeunit);
+		
+		wait.until(new ExpectedCondition<Boolean> () {
 
+			public Boolean apply(WebDriver d) {
+				return istextpresent(d, b, text);
+			}
+			
+		});
+		
+		flag=istextpresent(driver, b, text);
+		driver.manage().timeouts().implicitlyWait(Default_wait_page, TimeUnit.SECONDS);
+		return flag;
+		
+		
+	}
+
+	public static boolean istextpresent(WebDriver d,By b,String text)
+	{
+		try
+		{
+		return(d.findElement(b).getText().contains(text));
+		}
+		
+		catch(Exception e)
+		{
+			return false;
+		}
+		
+	}
 }
